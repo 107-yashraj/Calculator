@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Apple Calculator</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient( to right , rgba(158, 220, 232, 0.721) 0%, rgba(166, 206, 213, 0.9) );
+}
+.container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.button{
+  width: 66px;
+  padding: 20px;
+  margin: 0 3px;
+  border: 2px solid black;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: hover 1s ease-in-out;
+}
+
+
+.row{
+  margin: 8px 0;
+}
+.row input{
+  width: 291px;
+  font-size: 20px;
+    margin: 0;
+    padding: 10px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.text-center{
+  text-align: center;
+  color: azure;
+  font-weight: bolder;
+
+  margin-top: 30px;
+}
+
+.bg-red{
+  background: red;
+}
+
+.mx-auto{
+  margin: auto;
+}
+
+.flex{
+  display:flex;
+} 
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+.container{
+    border: 1px solid black;
+    width: 330px;
+    border-radius: 15px;
+    background-color: #33474a;
+}
+
+.button:hover{
+    transform: scale(5px);
+    background-color: #fe9f0a;
+}
+.latl:hover{
+    background-color: whitesmoke;
+}
+.latrow:hover{
+    background-color: whitesmoke;
+}
+.latl{
+    background-color: #9ca8a0;  
+}
+.latrow{
+    background-color: #fe9f0a;  
+    font-size: 20px; 
+}
+span{
+    font-size: large;
+}
+</style>
+</head>
+
+<body>
+
+  <div class="container flex flex-col items-center mx-auto m-w-20">
+    <div >
+        <h1 class="text-center">Apple-Calculator</h1>
+    </div>
+    
+    <div class="row">
+      <input class="input" type="text"/>
+    </div>
+    <div class="row ">
+      <button class="button latrow">C</button>
+      <button class="button latrow">%</button>
+      <button class="button latrow">M+</button>
+      <button class="button latrow">M-</button>
+    </div>
+    <div class="row">
+      <button class="button">7</button>
+      <button class="button">8</button>
+      <button class="button">9</button>
+      <button class="button latl">*</button>
+    </div>
+    <div class="row">
+      <button class="button">4</button>
+      <button class="button">5</button>
+      <button class="button">6</button>
+      <button class="button latl">/</button>
+    </div>
+    <div class="row">
+      <button class="button">1</button>
+      <button class="button">2</button>
+      <button class="button">3</button>
+      <button class="button latl">+</button>
+    </div>
+    <div class="row">
+      <button class="button">0</button>
+      <button class="button">.</button>
+      <button class="button">=</button>
+      <button class="button latl">-</button>
+    </div>
+  </div>
+  <script src="logic.js"></script>
+</body>
+
+</html>
